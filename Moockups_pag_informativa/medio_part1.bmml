@@ -1,0 +1,81 @@
+<mockup version="1.0" skin="sketch" measuredW="1263" measuredH="621" mockupW="1024" mockupH="600">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="239" y="21" w="1024" h="600" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//marketingdigital.mx</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="301" y="90" w="900" h="504" measuredW="100" measuredH="70" zOrder="1" locked="true" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="1201" y="92" w="62" h="500" measuredW="100" measuredH="70" zOrder="2" locked="true" isInGroup="-1"/>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="239" y="92" w="62" h="500" measuredW="100" measuredH="70" zOrder="3" locked="true" isInGroup="-1"/>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Icon" x="258" y="110" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>UpdateIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::SubTitle" x="569" y="106" w="177" h="-1" measuredW="101" measuredH="33" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Servicios</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="__group__" x="901" y="97" w="300" h="195" measuredW="300" measuredH="195" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Button" x="0" y="0" w="300" h="27" measuredW="122" measuredH="27" zOrder="0" locked="false" isInGroup="26">
+          <controlProperties>
+            <text>Nuestros%20clientes</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="50" y="42" w="250" h="27" measuredW="113" measuredH="27" zOrder="1" locked="false" isInGroup="26">
+          <controlProperties>
+            <text>Quienes%20Somos</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="100" y="84" w="200" h="27" measuredW="76" measuredH="27" zOrder="2" locked="false" isInGroup="26">
+          <controlProperties>
+            <text>Servicios</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="150" y="126" w="150" h="27" measuredW="76" measuredH="27" zOrder="3" locked="false" isInGroup="26">
+          <controlProperties>
+            <text>Contacto</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Button" x="200" y="168" w="100" h="27" measuredW="79" measuredH="27" zOrder="4" locked="false" isInGroup="26">
+          <controlProperties>
+            <text>Ubicaci%F3n</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::List" x="309" y="154" w="300" h="100" measuredW="100" measuredH="126" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Generaci%F3n%20de%20conceptos%20creativos%0ADise%F1o%20Gr%E1fico%0AAdministraci%F3n%20de%20proyectos%0AAdministraci%F3n%20de%20comunidades</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Image" x="609" y="154" w="300" h="100" measuredW="77" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ejemplo%20de%20servicio</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="609" y="257" w="300" h="100" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ejemplo%20de%20servicio</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Image" x="609" y="361" w="300" h="100" measuredW="77" measuredH="79" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ejemplo%20de%20servicio</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::List" x="309" y="254" w="300" h="107" measuredW="100" measuredH="126" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Generaci%F3n%20de%20conceptos%20creativos%0ADise%F1o%20Gr%E1fico%0AAdministraci%F3n%20de%20proyectos%0AAdministraci%F3n%20de%20comunidades</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::List" x="309" y="358" w="300" h="107" measuredW="100" measuredH="126" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Generaci%F3n%20de%20conceptos%20creativos%0ADise%F1o%20Gr%E1fico%0AAdministraci%F3n%20de%20proyectos%0AAdministraci%F3n%20de%20comunidades</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
