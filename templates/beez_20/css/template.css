@@ -117,7 +117,7 @@ ul
 #nuestros_clientes, #quienes_somos, #servicios, #contacto, #ubicacion
 	{
 		width: 100%;/*600px;*/
-		height: 600px;
+		height: auto;
 		float: left;
 		position: relative;
 		/*background: silver;*/
@@ -166,3 +166,8 @@ ul
 		height: 500px;
 	}
 
+#pie
+	{
+		text-align: right;
+		width: 100%;
+	}

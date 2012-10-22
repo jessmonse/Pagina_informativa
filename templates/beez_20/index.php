@@ -30,10 +30,11 @@ $app				= JFactory::getApplication();
 $doc				= JFactory::getDocument();
 $templateparams		= $app->getTemplate(true)->params;
 
-$doc->addStyleSheet($this->baseurl.'/templates/system/css/system.css');
-$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/position.css', $type = 'text/css', $media = 'screen,projection');
-$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/layout.css', $type = 'text/css', $media = 'screen,projection');
-$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/print.css', $type = 'text/css', $media = 'print');
+//$doc->addStyleSheet($this->baseurl.'/templates/system/css/system.css');
+//$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/position.css', $type = 'text/css', $media = 'screen,projection');
+//$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/layout.css', $type = 'text/css', $media = 'screen,projection');
+//$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/print.css', $type = 'text/css', $media = 'print');
+$doc->addStyleSheet($this->baseurl.'/templates/beez_20/css/template.css');
 
 $files = JHtml::_('stylesheet', 'templates/'.$this->template.'/css/general.css', null, false, true);
 if ($files):
@@ -53,16 +54,16 @@ if ($this->direction == 'rtl') {
 	}
 }
 
-$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery.cycle.all', 'text/javascript');
-$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery-1.8.2.min', 'text/javascript');
-$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery.easing.1.3', 'text/javascript');
+$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery.cycle.all.js', 'text/javascript');
+$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery-1.8.2.min.js', 'text/javascript');
+$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery.easing.1.3.js', 'text/javascript');
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>
 <jdoc:include type="head" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
 <!--[if lte IE 6]>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
 <?php if ($color=="personal") : ?>
@@ -101,13 +102,22 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 	var biggerTitle='<?php echo JText::_('TPL_BEEZ2_INCREASE_SIZE', true); ?>';
 	var resetTitle='<?php echo JText::_('TPL_BEEZ2_REVERT_STYLES_TO_DEFAULT', true); ?>';
 	var smallerTitle='<?php echo JText::_('TPL_BEEZ2_DECREASE_SIZE', true); ?>';
+	$(document).ready(function() {
+		$('#clientes').cycle({ 
+			    fx:     'scrollHorz', 
+			    delay:  -4000 });
+		
+	});
 </script>
 
 </head>
 
 <body>
-    <jdoc:include type="modules" name="navegacion" />
+    
     	<div id="contenido">
+    		<div id="navegacion">
+				<jdoc:include type="modules" name="navegacion" />
+			</div>
 			<div id= "cabecera">
 
 				<div id="logo">
@@ -215,41 +225,10 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 				</div>
 
 			<div id="pie">
-				<p>Derechos reservados</p>
+				<jdoc:include type="modules" name="pie_pagina" />
 			</div>
 
-			<script type="text/javascript">
-				$(document).ready(function() {
-					$('#clientes').cycle();
-				});
-
-				/*	$float_speed=1500; //milliseconds
-					$float_easing="easeOutQuint";
-					$menu_fade_speed=500; //milliseconds
-					$closed_menu_opacity=0.75;
-
-					$fl_menu=$("#navegacion");
-				//	$fl_menu_menu=$("#fl_menu .menu");
-
-				$(window).load(function() {
-					menuPosition=$('#fl_menu').position().top;
-					FloatMenu();
-		
-				});
-
-				$(window).scroll(function () { 
-					FloatMenu();
-				});
-
-					function FloatMenu(){
-						var scrollAmount=$(document).scrollTop();
-						var newPosition=menuPosition+scrollAmount;
-						if($(window).height()<$fl_menu.height()){
-							$fl_menu.css("top",menuPosition);
-						} else {
-							$fl_menu.stop().animate({top: newPosition}, $float_speed, $float_easing);
-						}
-					}*/
+			
 
 			</script>
 
