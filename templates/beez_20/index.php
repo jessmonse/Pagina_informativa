@@ -55,13 +55,14 @@ if ($this->direction == 'rtl') {
 
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery.cycle.all', 'text/javascript');
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery-1.8.2.min', 'text/javascript');
+$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery.easing.1.3', 'text/javascript');
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>
 <jdoc:include type="head" />
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <!--[if lte IE 6]>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
 <?php if ($color=="personal") : ?>
@@ -106,13 +107,153 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 
 <body>
     <jdoc:include type="modules" name="navegacion" />
-    <div id="header">
-        
-    </div>
-    <div id="content">
-    </div>
-    <div id="footer">
-    </div>
+    	<div id="contenido">
+			<div id= "cabecera">
+
+				<div id="logo">
+					<div style="background: Salmon; width: 550px; height: 60px;"></div>
+				</div>			
+
+			</div>
+			<div id="contenedor">
+				<div id="nuestros_clientes">
+					<div class="titulo"> <h1>NUESTROS CLIENTES</h1> </div>
+					<div id="clientes">
+						<div style="background: red; width: 500px; height: 300px;"></div>
+						<div style="background: blue; width: 500px; height: 300px;"></div>
+						<div style="background: black; width: 500px; height: 300px;"></div>
+					</div>
+				</div>
+				<div id="quienes_somos">
+					<div class="titulo"> <h1>QUIENES SOMOS </h1></div>
+					<div id= "descripcion"> 
+						<P>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</P>
+					</div>
+
+					<div id="imagen_descripcion"> 
+						<div style="background: LightGreen; width: 250px; height: 200px;"></div>
+					</div>
+				</div>
+
+				<div id="servicios">
+					<div class="titulo"> <h1>SERVICIOS </h1></div>
+					<div id= "lista"> 
+						<ul>
+							<li><strong>Generación de proyectos creativos.</strong>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</li>
+							<li><strong>Diseño Gráfico. </strong>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
+							</li>
+							<li><strong>Administración de proyectos</strong>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+							</li>
+							<li><strong>Administración de Comunidades.</strong>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</li>
+
+						</ul>
+					</div>
+
+					<div id="imagen_servicios"> 
+						<div style="background: red; width: 250px; height: 100px;"></div>
+						<div style="background: blue; width: 250px; height: 100px;"></div>
+						<div style="background: black; width: 250px; height: 100px;"></div>
+						<div style="background: green; width: 250px; height: 100px;"></div>
+					</div>
+				</div>
+
+				<div id="contacto">
+					<div id="principal">
+					<div class="titulo"> <h1>CONTÁCTANOS </h1></div>
+						<div id= "contacto_lista"> 
+							<ul>
+								<li>
+									<p>Nombre</p>
+									<input type="text" name="Nombre">
+								</li>
+								<li>
+									<p>Empresa</p>
+									<input type="text" name="Empresa">
+								</li>
+								<li>
+									<p>Correo Electrónico</p>
+									<input type="email" name="Correo">
+								</li>
+							</ul>
+						</div>
+						<div id="mensaje">
+							<p>Mensaje</p>
+							<input type="text" name="Mensaje">
+							<input type="submit" value="Enviar">
+						</div>
+					</div>
+					<div id="comunidades">
+						<ul>
+							<li>
+								correo@algo.algomas
+							</li>
+
+							<li> 
+								<a hred="#" title ="@tiwtter">
+										<img src="templates/beez_20/images/twitter_icon.png">
+								</a>
+							</li>
+
+							<li> 
+								<a hred="#" title ="facebook">
+										<img src="templates/beez_20/images/facebook.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="ubicacion">
+					<div class="titulo"> <h1>UBICACIÓN </h1></div>
+					<div id="mapa">
+						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.mx/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=Universidad+Latina+de+Am%C3%A9rica,+Morelia&amp;aq=1&amp;oq=universidad+la&amp;sll=19.703964,-101.208571&amp;sspn=0.188437,0.316887&amp;ie=UTF8&amp;hq=Universidad+Latina+de+Am%C3%A9rica,+Morelia&amp;t=m&amp;ll=19.697851,-101.235689&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.mx/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=Universidad+Latina+de+Am%C3%A9rica,+Morelia&amp;aq=1&amp;oq=universidad+la&amp;sll=19.703964,-101.208571&amp;sspn=0.188437,0.316887&amp;ie=UTF8&amp;hq=Universidad+Latina+de+Am%C3%A9rica,+Morelia&amp;t=m&amp;ll=19.697851,-101.235689&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>
+					</div>
+					<div id= "direccion"> 
+						<P>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</P>
+					</div>
+				</div>
+
+			<div id="pie">
+				<p>Derechos reservados</p>
+			</div>
+
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#clientes').cycle();
+				});
+
+				/*	$float_speed=1500; //milliseconds
+					$float_easing="easeOutQuint";
+					$menu_fade_speed=500; //milliseconds
+					$closed_menu_opacity=0.75;
+
+					$fl_menu=$("#navegacion");
+				//	$fl_menu_menu=$("#fl_menu .menu");
+
+				$(window).load(function() {
+					menuPosition=$('#fl_menu').position().top;
+					FloatMenu();
+		
+				});
+
+				$(window).scroll(function () { 
+					FloatMenu();
+				});
+
+					function FloatMenu(){
+						var scrollAmount=$(document).scrollTop();
+						var newPosition=menuPosition+scrollAmount;
+						if($(window).height()<$fl_menu.height()){
+							$fl_menu.css("top",menuPosition);
+						} else {
+							$fl_menu.stop().animate({top: newPosition}, $float_speed, $float_easing);
+						}
+					}*/
+
+			</script>
+
+		</div>
 
 </body>
 </html>

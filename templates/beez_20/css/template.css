@@ -28,5 +28,141 @@ body.contentpane {
 }
 img { border: 0 none; }
 
+html,body
+	{
 
+		margin:0px;
+
+		height:100%;
+
+	}
+
+#contenido
+	{
+		width: 900px;
+		background: silver;
+		margin: 50px auto;
+		overflow: auto;
+        /*border: 1px solid red;*/
+	}
+
+.titulo
+	{
+		text-align: center;
+		text-transform:uppercase;
+		padding-bottom: 100px;
+		color: orangered;		
+	}
+
+#clientes
+	{
+		width: 500px;
+	}
+
+ul
+	{
+		list-style-type:none;
+	}
+
+#descripcion
+	{
+		width: 300px;
+		float: left;
+
+	}
+
+#imagen_descripcion
+	{
+		width: 250px;
+		float: left;
+		margin-left: 50px;
+		margin-bottom: 50px;
+	}
+
+#lista
+	{
+		width: 300px;
+		float: left;
+	}
+
+
+#imagen_servicios
+	{
+		width: 250px;
+		float: left;
+		margin-left: 50px;
+		margin-bottom: 50px;
+	}
+
+#navegacion
+	{
+		padding-left: 780px;
+		float: left;
+		width: 300px;
+		position: fixed;
+		top:50px;
+		left:0px;
+
+	}
+
+#navegacion li
+	{
+
+		/*position: fixed;*/
+		background: OrangeRed;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+#nuestros_clientes, #quienes_somos, #servicios, #contacto, #ubicacion
+	{
+		width: 100%;/*600px;*/
+		height: 600px;
+		float: left;
+		position: relative;
+		/*background: silver;*/
+	}
+
+#mapa, #direccion
+	{
+		width: 450px;
+
+	}
+
+#comunidades li
+	{
+		display: inline;
+	}
+
+#contacto_lista
+	{
+		width: 300px;
+		float: left;
+	}
+
+#mensaje
+	{
+		width: 250px;
+		float: left;
+		margin-left: 50px;
+		margin-bottom: 50px;
+	}
+
+#mensaje input
+	{
+		height:  250px;
+	}
+
+#comunidades
+	{
+		width: 100%;
+		height: 100px;
+		float: left;
+	}
+
+#principal
+	{
+		width: 100%;
+		height: 500px;
+	}
 
