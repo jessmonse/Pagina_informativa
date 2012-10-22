@@ -15,7 +15,7 @@
     <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="1201" y="92" w="62" h="500" measuredW="100" measuredH="70" zOrder="2" locked="true" isInGroup="-1"/>
     <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="239" y="92" w="62" h="500" measuredW="100" measuredH="70" zOrder="3" locked="true" isInGroup="-1"/>
     <control controlID="5" controlTypeID="com.balsamiq.mockups::Canvas" x="301" y="90" w="900" h="20" measuredW="100" measuredH="70" zOrder="4" locked="true" isInGroup="-1"/>
-    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="793" y="559" w="350" h="20" measuredW="311" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="793" y="559" w="350" h="20" measuredW="300" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Todos%20los%20derechos%20reservados%20a%20Marketing%20Digital%20</text>
       </controlProperties>
