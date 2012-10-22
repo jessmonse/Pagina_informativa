@@ -30,11 +30,10 @@ $app				= JFactory::getApplication();
 $doc				= JFactory::getDocument();
 $templateparams		= $app->getTemplate(true)->params;
 
-//$doc->addStyleSheet($this->baseurl.'/templates/system/css/system.css');
-//$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/position.css', $type = 'text/css', $media = 'screen,projection');
-//$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/layout.css', $type = 'text/css', $media = 'screen,projection');
-//$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/print.css', $type = 'text/css', $media = 'print');
-$doc->addStyleSheet($this->baseurl.'/templates/beez_20/css/template.css');
+$doc->addStyleSheet($this->baseurl.'/templates/system/css/system.css');
+$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/position.css', $type = 'text/css', $media = 'screen,projection');
+$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/layout.css', $type = 'text/css', $media = 'screen,projection');
+$doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/print.css', $type = 'text/css', $media = 'print');
 
 $files = JHtml::_('stylesheet', 'templates/'.$this->template.'/css/general.css', null, false, true);
 if ($files):
@@ -107,12 +106,8 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 </head>
 
 <body>
-    
+    <jdoc:include type="modules" name="navegacion" />
     	<div id="contenido">
-    		<div id="navegacion">
-				<jdoc:include type="modules" name="navegacion" />
-			</div>
-
 			<div id= "cabecera">
 
 				<div id="logo">
@@ -220,7 +215,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 				</div>
 
 			<div id="pie">
-				<jdoc:include type="modules" name="navegacion" />
+				<p>Derechos reservados</p>
 			</div>
 
 			<script type="text/javascript">
