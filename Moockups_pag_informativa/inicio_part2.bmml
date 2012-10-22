@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" measuredW="1263" measuredH="621" mockupW="1177" mockupH="600">
+<mockup version="1.0" skin="sketch" measuredW="1263" measuredH="621" mockupW="1250" mockupH="600">
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="239" y="21" w="1024" h="600" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
       <controlProperties>
@@ -38,14 +38,14 @@
         <text>Quienes%20Somos</text>
       </controlProperties>
     </control>
-    <control controlID="27" controlTypeID="com.balsamiq.mockups::Canvas" x="86" y="163" w="100" h="69" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Canvas" x="13" y="126" w="100" h="69" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1"/>
     <control controlID="34" controlTypeID="__group__" x="930" y="121" w="268" h="195" measuredW="268" measuredH="195" zOrder="8" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="com.balsamiq.mockups::Button" x="0" y="0" w="267" h="27" measuredW="122" measuredH="27" zOrder="0" locked="false" isInGroup="34">
           <controlProperties>
             <color>13576743</color>
             <href>inicio%26bm%3Binicio.bmml%26bm%3Binicio.bmml%26bm%3Binicio.bmml</href>
-            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22844%2C100%2C1111%2C127%22%20href%3D%22inicio.bmml%22%20alt%3D%22inicio%22%20id%3D%220%22/%3E</map>
+            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22917%2C100%2C1184%2C127%22%20href%3D%22inicio.bmml%22%20alt%3D%22inicio%22%20id%3D%220%22/%3E</map>
             <text>Nuestros%20clientes</text>
           </controlProperties>
         </control>
@@ -53,7 +53,7 @@
           <controlProperties>
             <color>13576743</color>
             <href>inicio_part2%26bm%3Binicio_part2.bmml%26bm%3Binicio_part2.bmml%26bm%3Binicio_part2.bmml</href>
-            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22889%2C142%2C1112%2C169%22%20href%3D%22inicio_part2.bmml%22%20alt%3D%22inicio_part2%22%20id%3D%221%22/%3E</map>
+            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22962%2C142%2C1185%2C169%22%20href%3D%22inicio_part2.bmml%22%20alt%3D%22inicio_part2%22%20id%3D%221%22/%3E</map>
             <text>Quienes%20Somos</text>
           </controlProperties>
         </control>
@@ -61,7 +61,7 @@
           <controlProperties>
             <color>13576743</color>
             <href>medio_part1%26bm%3Bmedio_part1.bmml%26bm%3Bmedio_part1.bmml%26bm%3Bmedio_part1.bmml</href>
-            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22933%2C184%2C1111%2C211%22%20href%3D%22medio_part1.bmml%22%20alt%3D%22medio_part1%22%20id%3D%222%22/%3E</map>
+            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%221006%2C184%2C1184%2C211%22%20href%3D%22medio_part1.bmml%22%20alt%3D%22medio_part1%22%20id%3D%222%22/%3E</map>
             <text>Servicios</text>
           </controlProperties>
         </control>
@@ -69,7 +69,7 @@
           <controlProperties>
             <color>13576743</color>
             <href>medio_part2%26bm%3Bmedio_part2.bmml%26bm%3Bmedio_part2.bmml%26bm%3Bmedio_part2.bmml</href>
-            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22978%2C226%2C1112%2C253%22%20href%3D%22medio_part2.bmml%22%20alt%3D%22medio_part2%22%20id%3D%223%22/%3E</map>
+            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%221051%2C226%2C1185%2C253%22%20href%3D%22medio_part2.bmml%22%20alt%3D%22medio_part2%22%20id%3D%223%22/%3E</map>
             <text>Contacto</text>
           </controlProperties>
         </control>
@@ -77,7 +77,7 @@
           <controlProperties>
             <color>13576743</color>
             <href>final%26bm%3Bfinal.bmml%26bm%3Bfinal.bmml%26bm%3Bfinal.bmml</href>
-            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%221022%2C268%2C1111%2C295%22%20href%3D%22final.bmml%22%20alt%3D%22final%22%20id%3D%224%22/%3E</map>
+            <map>%3Carea%20shape%3D%22rect%22%20coords%3D%221095%2C268%2C1184%2C295%22%20href%3D%22final.bmml%22%20alt%3D%22final%22%20id%3D%224%22/%3E</map>
             <text>Ubicaci%F3n</text>
           </controlProperties>
         </control>
