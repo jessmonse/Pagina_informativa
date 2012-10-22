@@ -63,7 +63,8 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>
 <jdoc:include type="head" />
-
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.js"></script>-->
 <!--[if lte IE 6]>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
 <?php if ($color=="personal") : ?>
@@ -183,7 +184,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 		<script type="text/javascript">
 		$(document).ready(function() {
 			//inicializas el primer slider
-			$('#clientes').cycle();
+			$('.custom').cycle();
 
 			//inicializas el segundo slider, le das algunos efectos
 			//$('#identificador2 .contenedor').cycle({ 
