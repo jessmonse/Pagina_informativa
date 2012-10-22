@@ -116,7 +116,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 			<div id= "cabecera">
 
 				<div id="logo">
-					<div style="background: Salmon; width: 550px; height: 60px;"></div>
+					<jdoc:include type="modules" name="logo_imagen" />
 				</div>			
 
 			</div>
@@ -130,34 +130,22 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 				<div id="quienes_somos">
 					<div class="titulo"> <h1>QUIENES SOMOS </h1></div>
 					<div id= "descripcion"> 
-						<P>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</P>
+						<jdoc:include type="modules" name="descripcion_quienes" />
 					</div>
 
 					<div id="imagen_descripcion"> 
-						<div style="background: LightGreen; width: 250px; height: 200px;"></div>
+						<jdoc:include type="modules" name="descripcion_imagen" />
 					</div>
 				</div>
 
 				<div id="servicios">
 					<div class="titulo"> <h1>SERVICIOS </h1></div>
 					<div id= "lista"> 
-						<ul>
-							<li><strong>Generación de proyectos creativos.</strong>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</li>
-							<li><strong>Diseño Gráfico. </strong>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
-							</li>
-							<li><strong>Administración de proyectos</strong>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-							</li>
-							<li><strong>Administración de Comunidades.</strong>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</li>
-
-						</ul>
+						<jdoc:include type="modules" name="lista_servicios" />
 					</div>
 
 					<div id="imagen_servicios"> 
-						<div style="background: red; width: 250px; height: 100px;"></div>
-						<div style="background: blue; width: 250px; height: 100px;"></div>
-						<div style="background: black; width: 250px; height: 100px;"></div>
-						<div style="background: green; width: 250px; height: 100px;"></div>
+						<jdoc:include type="modules" name="servicios_imagen" />
 					</div>
 				</div>
 
@@ -165,55 +153,24 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 					<div id="principal">
 					<div class="titulo"> <h1>CONTÁCTANOS </h1></div>
 						<div id= "contacto_lista"> 
-							<ul>
-								<li>
-									<p>Nombre</p>
-									<input type="text" name="Nombre">
-								</li>
-								<li>
-									<p>Empresa</p>
-									<input type="text" name="Empresa">
-								</li>
-								<li>
-									<p>Correo Electrónico</p>
-									<input type="email" name="Correo">
-								</li>
-							</ul>
+							<jdoc:include type="modules" name="contacto_lista" />
 						</div>
 						<div id="mensaje">
-							<p>Mensaje</p>
-							<input type="text" name="Mensaje">
-							<input type="submit" value="Enviar">
+							<jdoc:include type="modules" name="mensaje" />
 						</div>
 					</div>
 					<div id="comunidades">
-						<ul>
-							<li>
-								correo@algo.algomas
-							</li>
-
-							<li> 
-								<a hred="#" title ="@tiwtter">
-										<img src="templates/beez_20/images/twitter_icon.png">
-								</a>
-							</li>
-
-							<li> 
-								<a hred="#" title ="facebook">
-										<img src="templates/beez_20/images/facebook.png">
-								</a>
-							</li>
-						</ul>
+						<jdoc:include type="modules" name="comunidades" />
 					</div>
 				</div>
 
 				<div id="ubicacion">
 					<div class="titulo"> <h1>UBICACIÓN </h1></div>
 					<div id="mapa">
-						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.mx/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=Universidad+Latina+de+Am%C3%A9rica,+Morelia&amp;aq=1&amp;oq=universidad+la&amp;sll=19.703964,-101.208571&amp;sspn=0.188437,0.316887&amp;ie=UTF8&amp;hq=Universidad+Latina+de+Am%C3%A9rica,+Morelia&amp;t=m&amp;ll=19.697851,-101.235689&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.mx/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=Universidad+Latina+de+Am%C3%A9rica,+Morelia&amp;aq=1&amp;oq=universidad+la&amp;sll=19.703964,-101.208571&amp;sspn=0.188437,0.316887&amp;ie=UTF8&amp;hq=Universidad+Latina+de+Am%C3%A9rica,+Morelia&amp;t=m&amp;ll=19.697851,-101.235689&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>
+						<jdoc:include type="modules" name="mapa" />
 					</div>
 					<div id= "direccion"> 
-						<P>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</P>
+						<jdoc:include type="modules" name="ldireccion" />
 					</div>
 				</div>
 
