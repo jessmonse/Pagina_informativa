@@ -54,8 +54,8 @@ if ($this->direction == 'rtl') {
 	}
 }
 
-$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery.cycle.all.js', 'text/javascript');
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery-1.8.2.min.js', 'text/javascript');
+$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery.cycle.all.js', 'text/javascript');
 $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery.easing.1.3.js', 'text/javascript');
 
 ?>
@@ -102,12 +102,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 	var biggerTitle='<?php echo JText::_('TPL_BEEZ2_INCREASE_SIZE', true); ?>';
 	var resetTitle='<?php echo JText::_('TPL_BEEZ2_REVERT_STYLES_TO_DEFAULT', true); ?>';
 	var smallerTitle='<?php echo JText::_('TPL_BEEZ2_DECREASE_SIZE', true); ?>';
-	$(document).ready(function() {
-		$('#clientes').cycle({ 
-			    fx:     'scrollHorz', 
-			    delay:  -4000 });
-		
-	});
+	
 </script>
 
 </head>
@@ -129,9 +124,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 				<div id="nuestros_clientes">
 					<div class="titulo"> <h1>NUESTROS CLIENTES</h1> </div>
 					<div id="clientes">
-						<div style="background: red; width: 500px; height: 300px;"></div>
-						<div style="background: blue; width: 500px; height: 300px;"></div>
-						<div style="background: black; width: 500px; height: 300px;"></div>
+						<jdoc:include type="modules" name="slider_clientes" />
 					</div>
 				</div>
 				<div id="quienes_somos">
@@ -228,11 +221,19 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 				<jdoc:include type="modules" name="pie_pagina" />
 			</div>
 
-			
-
-			</script>
-
 		</div>
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+			//inicializas el primer slider
+			$('#clientes').cycle();
+
+			//inicializas el segundo slider, le das algunos efectos
+			//$('#identificador2 .contenedor').cycle({ 
+			//    fx:     'scrollHorz', 
+			//    delay:  -4000 });
+		});
+	</script>
 
 </body>
 </html>
