@@ -123,13 +123,17 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 			</div>
 			<div id="contenedor">
 				<div id="nuestros_clientes">
-					<div class="titulo"> <h1>NUESTROS CLIENTES</h1> </div>
+					<div class="titulo"> 
+						<jdoc:include type="modules" name="titulo_clientes" />
+					 </div>
 					<div id="clientes">
 						<jdoc:include type="modules" name="slider_clientes" />
 					</div>
 				</div>
 				<div id="quienes_somos">
-					<div class="titulo"> <h1>QUIENES SOMOS </h1></div>
+					<div class="titulo"> 
+						<jdoc:include type="modules" name="titulo_quienes_somos" />
+					</div>
 					<div id= "descripcion"> 
 						<jdoc:include type="modules" name="descripcion_quienes" />
 					</div>
@@ -140,7 +144,9 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 				</div>
 
 				<div id="servicios">
-					<div class="titulo"> <h1>SERVICIOS </h1></div>
+					<div class="titulo">
+						<jdoc:include type="modules" name="titulo_servicios" />
+					</div>
 					<div id= "lista"> 
 						<jdoc:include type="modules" name="lista_servicios" />
 					</div>
@@ -184,7 +190,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/jquery
 		<script type="text/javascript">
 		$(document).ready(function() {
 			//inicializas el primer slider
-			$('.custom').cycle();
+			$('#clientes .custom').cycle();
 
 			//inicializas el segundo slider, le das algunos efectos
 			//$('#identificador2 .contenedor').cycle({ 
